@@ -12,7 +12,7 @@ fi
 echo "[$(date -u +"%Y-%m-%dT%H:%M:%SZ")] Influx data point: $point"
 if [[ -z $INFLUX_DATABASE || -z $INFLUX_USERNAME || -z $INFLUX_PASSWORD ]]; then
   echo Influx user credentials not found
-  exit 0
+  exit8
 fi
 
 host="https://metrics.solana.com:8086"
